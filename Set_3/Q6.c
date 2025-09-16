@@ -14,7 +14,7 @@ void main() {
     printf("Options: \n");
     printf("a) Sunday\n");
     printf("b) Monday\n");
-    printf("c) Friday\n");
+    printf("c) Friday\n");      // Correct Answer
     printf("d) Thursday\n");
     printf("\n");
 
@@ -32,7 +32,7 @@ void main() {
     case 'b':
 
     case 'd':
-        printf("Wrong answer! You are imprisoned.");
+        printf("Wrong answer! You are imprisoned.");        // a, b and d are wrong answers. So the case continues until it encounters a break at d
         break;
     
     default:
