@@ -1,6 +1,10 @@
-// QUESTION
+// QUESTION 1
 
 // Implement a function MAXINT2() that takes two integers as arguments and returns the maximum of them. Take two integers as input, and using MAXINT2(), print the maximum. Similarly, implement MININT2() and print the minimum of the same integers.
+
+// QUESTION 2
+
+// Take three integers as input and, using MAXINT2() print the maximum of these three integers. Using MININT2(), similarly, print the minimum of the same integers.
 
 #include <stdio.h>
 
@@ -32,6 +36,7 @@ int MININT2(int num_1, int num_2)
 
 void main()
 {
+    // Q1
     // int num_1, num_2;
 
     // printf("Enter number 1: ");
@@ -45,6 +50,7 @@ void main()
     // printf("Maximum: %d\n", max);
     // printf("Minimum: %d\n", min);
 
+    // Q2
     int num_1, num_2, num_3;
 
     printf("Enter number 1: ");
