@@ -39,7 +39,7 @@ int Binary_Search(int array[], int size, int search_element)
     int end = nonzero_count - 1;
     int mid = (end + start) / 2;
     
-    while (start = end + 1)
+    while (start != end + 1)
     {
         if (search_element == array[mid])
         {

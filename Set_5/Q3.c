@@ -6,12 +6,14 @@
 
 int INCVAL(int num)
 {
-    return num + 1;
+    num++;
+    return num;
 }
 
 int INCREF(int *ptr)
 {
-    return (*ptr) + 1;
+    (*ptr)++;
+    return *ptr;
 }
 
 void main()
@@ -22,6 +24,8 @@ void main()
     int num_1_inc = INCVAL(num_1);
     int num_2_inc = INCREF(&num_2);
 
+    printf("Local Variable num_1: %d\n", num_1);
+    printf("Local Variable num_2: %d\n", num_2);
     printf("INCVAL incremented value: %d\n", num_1_inc);
     printf("INCREF incremented value: %d\n", num_2_inc);
 }

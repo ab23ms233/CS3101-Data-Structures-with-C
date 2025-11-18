@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// Function to find average of integer array
 float AVGINTARRAY(int array[], int size)
 {
     int sum = 0;

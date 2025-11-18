@@ -6,25 +6,33 @@
 #include <string.h>
 
 void main() {
-    int first_name[20], middle_name[20], last_name[20];
-    int midname_short[2], name[62];
+    char first_name[20], middle_name[20], last_name[20];
+    char midname_short[4], name[62];
+
+    // strcpy(first_name, "Arya");
+    // strcpy(middle_name, "Srabanti");
+    // strcpy(last_name, "Basak");
 
     printf("Enter first name: ");
-    scanf("%s", &first_name);
+    gets(first_name);
     printf("Enter middle name: ");
-    scanf("%s", &middle_name);
+    gets(middle_name);
     printf("Enter last name: ");
-    scanf("%s", &last_name);
+    gets(last_name);
+    printf("\n");
 
-    sprintf(name, "%s %c. %s", first_name, middle_name[0], last_name);
-    // midname_short[0] = middle_name[0];
-    // midname_short[1] = '.';
-    // // midname_short[2] = " ";
+    // printf("First name: %s\n", first_name);
+    // printf("Middle name: %s\n", middle_name);
+    // printf("Last name: %s\n", last_name);
 
-    // strcpy(name, first_name);
-    // strcat(name, " ");
-    // strcat(name, midname_short);
-    // strcat(name, last_name);
+    // sprintf(name, "%s %c. %s", first_name, middle_name[0], last_name);
+    midname_short[0] = middle_name[0];
+    midname_short[1] = '.';
+    midname_short[2] = ' ';
+    midname_short[3] = '\0';
 
+    strcpy(name, first_name);
+    strcat(name, " ");
+    strcat(name, last_name);
     printf("Full name: %s\n", name);
 }

@@ -44,7 +44,7 @@ void main()
         // If element is found, flag = 0
         if (A[i] == search_element)
         {
-            printf("Element found at position %d \n", i + 1);
+            printf("Element found at position %d\n", i + 1);
             flag = 0;
             break;
         }

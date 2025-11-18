@@ -9,9 +9,9 @@ void main() {
     char first_name[20], last_name[20], name[41];
 
     printf("Enter first name: ");
-    scanf("%s", &first_name);
+    gets(first_name);
     printf("Enter last name: ");
-    scanf("%s", &last_name);
+    gets(last_name);
 
     strcpy(name, first_name);
     strcat(name, " ");
