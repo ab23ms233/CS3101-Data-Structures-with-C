@@ -19,6 +19,10 @@ int INCREF(int *ptr)
 void main()
 {
     int num_1 = 8;
+    // int *ptr = &num_1;
+
+    // printf("%p\n", ptr);
+    // printf("%d", *ptr);
     int num_2 = 9;
 
     int num_1_inc = INCVAL(num_1);
